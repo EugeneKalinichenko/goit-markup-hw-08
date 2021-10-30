@@ -1,11 +1,12 @@
 .priveleges-section__title {
   margin-bottom: 10px;
 
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.14;
+  @include font(null, 14px, 700, 1.14, null, var(--primary-title-color));
+  // font-weight: 700;
+  // font-size: 14px;
+  // line-height: 1.14;
+  // color: vat(--primary-title-color);
   text-transform: uppercase;
-  color: vat(--primary-title-color);
 }
 .priveleges-section__list {
   display: flex;
@@ -17,9 +18,10 @@
   }
 }
 .priveleges-section__icon-block {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  @include flex(flex, center, center, null, null);
+  // display: flex;
+  // align-items: center;
+  // justify-content: center;
   width: 270px;
   height: 120px;
   background: var(--background-third-color);

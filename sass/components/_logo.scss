@@ -1,9 +1,10 @@
 .logo {
-  font-family: Raleway;
-  font-weight: 700;
-  font-size: 26px;
-  line-height: 1.19;
-  color: var(--accent-color);
+  // font-family: Raleway;
+  // font-weight: 700;
+  // font-size: 26px;
+  // line-height: 1.19;
+  // color: var(--accent-color);
+  @include font(Raleway, 26px, 700, 1.19, 0.03em, var(--accent-color));
 }
 .logo-link {
   margin-right: 90px;
