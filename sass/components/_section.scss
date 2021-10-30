@@ -1,5 +1,5 @@
 .section {
-  @include section(60, 60px);
+  @include section(60px, 60px);
   @media screen and (max-width: 1199) {
     padding-top: 60px;
     padding-bottom: 60px;

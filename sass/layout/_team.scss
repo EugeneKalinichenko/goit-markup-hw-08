@@ -6,25 +6,27 @@
   margin-bottom: 50px;
 
   @include font(null, 34px, 700, 1.16, null, var(--primary-title-color));
-  // font-weight: 700;
-  // font-size: 36px;
-  // line-height: 1.16;
-  // color: var(--primary-title-color);
   text-align: center;
 }
 
 .team-list {
-  display: flex;
-  margin-top: -30px;
-  margin-left: -30px;
+  @media screen and (min-width: 768px) {
+    @include list(flex, wrap, 30px, 30px);
+  }
 }
 
 .team-list__item {
-  flex-basis: calc(100% / 4 - 30px);
+  @media screen and (max-width: 767px) {
+    margin-bottom: 30px;
+  }
 
-  margin-top: 30px;
-  margin-left: 30px;
+  @media screen and (min-width: 768px) {
+    @include item(30px, 30px, 2, 30px);
+  }
 
+  @media screen and (min-width: 1200px) {
+    @include item(30px, 30px, 4, 30px);
+  }
   background: #ffffff;
 
   border-radius: 0px 0px 4px 4px;
