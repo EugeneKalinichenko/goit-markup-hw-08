@@ -2,16 +2,17 @@
   @include section(200px, 200px);
   // padding-top: 200px;
   // padding-bottom: 200px;
+  margin: 0 auto;
+  max-width: 1600px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
   background-image: linear-gradient(
       rgba(47, 48, 58, 0.4),
       rgba(47, 48, 58, 0.4)
     ),
     url(../images/bg1.jpg);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  max-width: 1600px;
-  margin: 0 auto;
 
   background-color: var(--background-primary-color);
   .container {
