@@ -99,7 +99,7 @@ body {
   }
 }
 
-@media screen and (min-width: 768) {
+@media screen and (min-width: 768px) {
   .container {
     width: 768px;
   }
@@ -123,8 +123,22 @@ body {
 }
 
 .section {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60;
+  padding-bottom: 60px;
+}
+
+@media screen and (max-width: 1199) {
+  .section {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 
 .backdrop {
@@ -489,6 +503,20 @@ body {
   border-radius: 4px;
 }
 
+@media screen and (max-width: 1199px) {
+  .priveleges-section {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .priveleges-section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+}
+
 .priveleges-section__title {
   margin-bottom: 10px;
   font-size: 14px;
@@ -498,23 +526,47 @@ body {
   text-transform: uppercase;
 }
 
-.priveleges-section__list {
-  display: flex;
+@media screen and (max-width: 767px) {
+  .priveleges-section__title {
+    text-align: center;
+  }
 }
 
-.priveleges-section__item {
-  flex-basis: calc(100% / 4 - 30px);
+@media screen and (min-width: 768px) {
+  .priveleges-section__list {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -30px;
+    margin-top: -30px;
+  }
 }
 
-.priveleges-section__item:not(:last-child) {
-  margin-right: 30px;
+@media screen and (max-width: 767px) {
+  .priveleges-section__item {
+    margin-bottom: 30px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .priveleges-section__item {
+    margin-left: 30px;
+    margin-top: 30px;
+    flex-basis: calc(100% / 2 - 30px);
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .priveleges-section__item {
+    margin-left: 30px;
+    margin-top: 30px;
+    flex-basis: calc(100% / 4 - 30px);
+  }
 }
 
 .priveleges-section__icon-block {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 270px;
   height: 120px;
   background: var(--background-third-color);
   border-radius: 4px;
@@ -522,7 +574,6 @@ body {
 }
 
 .priveleges-section__text {
-  width: 270px;
   font-size: 14px;
   line-height: 1.71;
   color: var(--secondary-text-color);

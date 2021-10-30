@@ -1,37 +1,48 @@
+.priveleges-section {
+  @media screen and (max-width: 1199px) {
+    @include section(60px, 60px);
+  }
+  @media screen and (min-width: 1200px) {
+    @include section(94px, 94px);
+  }
+}
+
 .priveleges-section__title {
   margin-bottom: 10px;
 
   @include font(null, 14px, 700, 1.14, null, var(--primary-title-color));
-  // font-weight: 700;
-  // font-size: 14px;
-  // line-height: 1.14;
-  // color: vat(--primary-title-color);
   text-transform: uppercase;
+  @media screen and (max-width: 767px) {
+    text-align: center;
+  }
 }
 .priveleges-section__list {
-  display: flex;
+  @media screen and (min-width: 768px) {
+    @include list(flex, wrap, 30px, 30px);
+  }
 }
 .priveleges-section__item {
-  flex-basis: calc(100% / 4 - 30px);
-  &:not(:last-child) {
-    margin-right: 30px;
+  @media screen and (max-width: 767px) {
+    margin-bottom: 30px;
+  }
+
+  @media screen and (min-width: 768px) {
+    @include item(30px, 30px, 2, 30px);
+  }
+
+  @media screen and (min-width: 1200px) {
+    @include item(30px, 30px, 4, 30px);
   }
 }
 .priveleges-section__icon-block {
   @include flex(flex, center, center, null, null);
-  // display: flex;
-  // align-items: center;
-  // justify-content: center;
-  width: 270px;
   height: 120px;
   background: var(--background-third-color);
   border-radius: 4px;
   margin-bottom: 30px;
 }
 .priveleges-section__text {
-  width: 270px;
   font-size: 14px;
   line-height: 1.71;
-
   color: var(--secondary-text-color);
 }
