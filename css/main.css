@@ -579,8 +579,16 @@ body {
   color: var(--secondary-text-color);
 }
 
-.what-section {
-  padding-bottom: 94px;
+@media screen and (max-width: 1199px) {
+  .what-section {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .what-section {
+    padding-bottom: 94px;
+  }
 }
 
 .what-section__title {
