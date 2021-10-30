@@ -1,0 +1,25 @@
+body {
+  font-family: "Roboto", sans-serif;
+  color: var(--primary-title-color-color);
+  letter-spacing: 0.03em;
+}
+
+.link {
+  text-decoration: none;
+}
+
+.list {
+  list-style: none;
+}
+
+.current::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 4px;
+
+  background: var(--accent-color);
+  border-radius: 2px;
+  display: block;
+  bottom: -1px;
+}

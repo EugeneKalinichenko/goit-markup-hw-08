@@ -1,0 +1,35 @@
+.priveleges-section__title {
+  margin-bottom: 10px;
+
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+  color: vat(--primary-title-color);
+}
+.priveleges-section__list {
+  display: flex;
+}
+.priveleges-section__item {
+  flex-basis: calc(100% / 4 - 30px);
+  &:not(:last-child) {
+    margin-right: 30px;
+  }
+}
+.priveleges-section__icon-block {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 270px;
+  height: 120px;
+  background: var(--background-third-color);
+  border-radius: 4px;
+  margin-bottom: 30px;
+}
+.priveleges-section__text {
+  width: 270px;
+  font-size: 14px;
+  line-height: 1.71;
+
+  color: var(--secondary-text-color);
+}

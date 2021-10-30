@@ -1,0 +1,10 @@
+.btn {
+  font-family: Roboto;
+  border: none;
+  cursor: pointer;
+  &:hover,
+  &:focus {
+    color: var(--secondary-title-color);
+    background: var(--accent-color);
+  }
+}
