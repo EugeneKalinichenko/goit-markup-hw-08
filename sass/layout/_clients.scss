@@ -8,20 +8,29 @@
 }
 
 .clients-list {
-  display: flex;
-  margin: -15px;
+  @include list(flex, wrap, 15px, 15px);
+  // display: flex;
+  // margin: -15px;
 }
 
 .clients-list__item {
-  margin: 15px;
+  @media screen and (max-width: 767px) {
+    @include item(30px, 30px, 2, 30px);
+    // margin-bottom: 15px;
+  }
+
+  @media screen and (min-width: 768px) {
+    @include item(30px, 30px, 3, 30px);
+  }
+
+  @media screen and (min-width: 1200px) {
+    @include item(30px, 30px, 6, 30px);
+  }
 }
 
 .clients-list__link {
   @include flex(flex, center, center, null, null);
-  // display: flex;
-  // align-items: center;
-  // justify-content: center;
-  width: 170px;
+  // width: 170px;
   height: 92px;
 
   border: 1px solid #afb1b8;

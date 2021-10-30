@@ -36,20 +36,12 @@
 
 .team-block {
   @include flex(flex, center, center, column, null);
-  // display: flex;
-  // flex-direction: column;
-  // align-items: center;
-  // justify-content: center;
   padding: 30px 32px;
 }
 
 .team-block__name {
   margin-bottom: 10px;
   @include font(null, 16px, 500, 1.18, null, var(--primary-title-color));
-  // font-weight: 500;
-  // font-size: 16px;
-  // line-height: 1.18;
-  // color: var(--primary-title-color);
   text-align: center;
 }
 .team-block__text {
