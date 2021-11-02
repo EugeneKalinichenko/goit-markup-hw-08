@@ -1,15 +1,28 @@
 .contacts {
   @include section(60px, 60px);
-  // padding-top: 60px;
-  // padding-bottom: 60px;
 
   background-color: var(--background-primary-color);
   .container {
-    display: flex;
+    // display: flex;
     align-items: baseline;
   }
 }
 
+.footer-container {
+  @media screen and(min-width:768px) {
+    display: flex;
+    align-items: baseline;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+}
+
+.footer-address {
+  @media screen and(max-width:767px) {
+    text-align: center;
+    margin-bottom: 60px;
+  }
+}
 .logo-contacts {
   display: block;
   margin-bottom: 20px;
@@ -57,8 +70,11 @@
 /* ----------------Jon Us------------- */
 
 .joinus {
-  width: 206px;
-  margin-left: 70px;
+  @media screen and(max-width: 767px) {
+    margin-bottom: 60px;
+  }
+  // width: 206px;
+  // margin-left: 70px;
   .icon-social {
     width: 20px;
     height: 20px;
@@ -67,6 +83,9 @@
 }
 
 .joinus__title {
+  @media screen and(max-width: 767px) {
+    text-align: center;
+  }
   margin-bottom: 20px;
 
   font-weight: 700;
@@ -94,9 +113,6 @@
   width: 100%;
   height: 100%;
   @include flex(flex, center, center, null, null);
-  // display: flex;
-  // justify-content: center;
-  // align-items: center;
 
   border-radius: 50%;
   background-color: rgba(255, 255, 255, 0.1);
@@ -109,10 +125,22 @@
 }
 
 .subscribe {
-  width: 570px;
-  margin: 0 auto;
+  @media screen and(max-width: 767px) {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    margin-top: 60px;
+    width: 450px;
+  }
+  @media screen and (min-width: 1200px) {
+    // margin-top: 60px;
+    // width: 358px;
+  }
 }
-
 .subscribe__title {
   margin-bottom: 20px;
 
@@ -121,15 +149,32 @@
   line-height: calc(16 / 14);
 
   text-transform: uppercase;
-
   color: var(--secondary-title-color);
+  text-align: center;
 }
 
+.subscribe-form {
+  width: 100%;
+}
 .subscribe-form__block {
-  display: flex;
+  display: block;
+  align-items: center;
+  @media screen and(min-width: 1200px) {
+    // width: 100%;
+    display: flex;
+  }
 }
 
 .subscribe-form__input {
+  @media screen and(max-width: 1199px) {
+    margin-bottom: 20px;
+  }
+  @media screen and(min-width: 1200px) {
+    width: 358px;
+    margin-right: 12px;
+    // display: block;
+    // align-items: center;
+  }
   width: 100%;
   height: 50px;
   padding: 15px 16px;
@@ -156,25 +201,18 @@
 }
 
 .subscribe-form__btn {
-  margin-left: 12px;
+  margin: 0 auto;
+  // margin-left: 12px;
   padding: 10px 28px;
   max-width: 200px;
   height: 50px;
 
   @include font(null, 16px, 700, 1.875, 0.06em, var(--secondary-title-color));
-  // font-weight: 700;
-  // font-size: 16px;
-  // line-height: calc(30 / 16);
-  // letter-spacing: 0.06em;
 
-  // color: #ffffff;
   background: #2196f3;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   @include flex(flex, center, center, null, null);
-  // display: flex;
-  // align-items: center;
-  // justify-content: center;
 }
 
 .subscribe-form__icon {

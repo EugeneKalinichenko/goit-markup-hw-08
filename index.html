@@ -46,6 +46,65 @@
                         11
                         11</a></li>
             </ul>
+            <button type="button" class="menu-open" menu-open>
+                <svg width="40" heigh="40">
+                    <use href="./images/symbol-defs.svg#icon-menu"></use>
+                </svg>
+            </button>
+        </div>
+
+        <!-- Мобильное меню -->
+        <div class="mobile-nav is-hidden" mobile-nav>
+            <div class="container">
+                <button type="button" class="menu-close" menu-close>
+                    <svg class="mob-menu__icon-close">
+                        <use href="./images/symbol-defs.svg#icon-close"></use>
+                    </svg></button>
+                <nav>
+                    <ul class="mobile-menu list">
+                        <li class="mobile-menu__item"><a class="mobile-menu__link link current-link"
+                                href="./index.html">Студия</a>
+                        </li>
+                        <li class="mobile-menu__item"><a class="mobile-menu__link link"
+                                href="./portfolio.html">Портфолио</a></li>
+                        <li class="mobile-menu__item"><a class="mobile-menu__link link" href="Контакты">Контакты</a>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="mobile-nav__bottom">
+                    <ul class="mobile-contacts list">
+
+                        <li class="mobile-contacts__item"><a
+                                class="mobile-contacts__link link mobile-contacts__link-telephone"
+                                href="tel:+380961111111">
+                                +38 096
+                                111
+                                11
+                                11</a></li>
+                        <li class="mobile-contacts__item"><a class="mobile-contacts__link link"
+                                href="mailto:info@devstudio.com">
+                                info@devstudio.com</a></li>
+                    </ul>
+                    <ul class="mobile-network list">
+                        <li class="mobile-network__item">
+                            <a href="https://www.instagram.com" target="_blank"
+                                class="mobile-network__link link">Instagram</a>
+                        </li>
+                        <li class="mobile-network__item">
+                            <a href="https://twitter.com" target="_blank" class="mobile-network__link link">Twitter</a>
+                        </li>
+                        <li class="mobile-network__item">
+                            <a href="https://www.facebook.com" target="_blank"
+                                class="mobile-network__link link">Facebook</a>
+                        </li>
+                        <li class="mobile-network__item">
+                            <a href="https://linkedin.com" target="_blank"
+                                class="mobile-network__link link">LinkedIn</a>
+                        </li>
+                    </ul>
+
+                </div>
+            </div>
         </div>
     </header>
     <main>
@@ -353,8 +412,8 @@
     </main>
     <!-- Футер -->
     <footer class="contacts">
-        <div class="container">
-            <div class="address">
+        <div class="container footer-container">
+            <div class="footer-address">
                 <a class="logo link logo-contacts" href="./index.html">Web<span class="contacts-name">Studio</span></a>
                 <address class="address__contacts">
                     <a class="googlemaps link" href="https://goo.gl/maps/HDP6xycDdDhgACgC6" target="_blank"
@@ -481,6 +540,7 @@
         </div>
     </div>
     <script src="./js/modal.js"></script>
+    <script src="./js/menu.js"></script>
 </body>
 
 </html>
