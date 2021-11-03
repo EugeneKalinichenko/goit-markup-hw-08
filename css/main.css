@@ -1376,7 +1376,7 @@ body {
   }
 }
 
-.current-link {
+.mobile-menu__current-link {
   color: var(--accent-color);
 }
 
