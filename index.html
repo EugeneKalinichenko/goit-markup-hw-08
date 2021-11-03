@@ -46,8 +46,8 @@
                         11
                         11</a></li>
             </ul>
-            <button type="button" class="menu-open" menu-open>
-                <svg width="40" heigh="40">
+            <button type="button" class="menu-open btn" menu-open>
+                <svg width="40" height="40">
                     <use href="./images/symbol-defs.svg#icon-menu"></use>
                 </svg>
             </button>
@@ -175,7 +175,7 @@
                 <ul class="what-section__list list">
                     <li class="what-section__item">
                         <div class="what-section__block">
-                            <img src="./images/img1.jpg" alt="Планшет с док станцией" width="370">
+                            <img src="./images/what/img1.jpg" alt="Планшет с док станцией" width="370">
                             <div class="what-section__block-text">
                                 <h3 class="what-section__text">Десктопные приложения</h3>
                             </div>
@@ -183,7 +183,7 @@
                     </li>
                     <li class="what-section__item">
                         <div class="what-section__what-block">
-                            <img src="./images/img2.jpg" alt="Телефон с ноутбуком" width="370">
+                            <img src="./images/what/img2.jpg" alt="Телефон с ноутбуком" width="370">
                             <div class="what-section__block-text">
                                 <h3 class="what-section__text">Мобильные приложения</h3>
                             </div>
@@ -191,7 +191,7 @@
                     </li>
                     <li class="what-section__item">
                         <div class="what-section__what-block">
-                            <img src="./images/img3.jpg" alt="Планшет с матрицой цветов" width="370">
+                            <img src="./images/what/img2.jpg" alt="Планшет с матрицой цветов" width="370">
                             <div class="what-section__block-text">
                                 <h3 class="what-section__text">Дизайнерские решения</h3>
                             </div>
@@ -206,7 +206,16 @@
                 <h2 class="team-section__title">Наша команда</h2>
                 <ul class="team-list list">
                     <li class="team-list__item">
-                        <img src="./images/img4.jpg" alt="Мужчина в очкаъ и с бородой" width="270">
+                                    <picture>
+                                        <source srcset="./images/team/igor_desktop_270@1x.jpg 1x, ./images/team/igor_desktop_270@2x.jpg 2x"
+                                            media="(min-width: 1200px)">
+                                        <source srcset="./images/team/igor_tablet_354@1x.jpg 1x, ./images/team/igor_tablet_354@2x.jpg 2x"
+                                            media="(min-width: 768px)">
+                                        <source srcset="./images/team/igor_mobile_450@1x.jpg 1x, ./images/team/igor_mobile_450@2x.jpg 2x"
+                                            media="(min-width: 480px)">
+                                        <img src="./images/team/ihor.jpg" alt="Игорь Демьяненко" width="100%">
+                                    </picture>
+                        <!-- <img src="./images/img4.jpg" alt="Мужчина в очкаъ и с бородой" width="270"> -->
                         <div class="team-block">
                             <h3 class="team-block__name">Игорь Демьяненко</h3>
                             <p class="team-block__text" lang="en">Product Designer</p>
@@ -244,7 +253,16 @@
                         </div>
                     </li>
                     <li class="team-list__item">
-                        <img src="./images/img5.jpg" alt="Девушка, блондинка в очках" width="270">
+                                    <picture>
+                                        <source srcset="./images/team/olha_desktop_270@1x.jpg 1x, ./images/team/olha_desktop_270@2x.jpg 2x"
+                                            media="(min-width: 1200px)">
+                                        <source srcset="./images/team/olha_tablet_354@1x.jpg 1x, ./images/team/olha_tablet_354@2x.jpg 2x"
+                                            media="(min-width: 768px)">
+                                        <source srcset="./images/team/olha_mobile_450@1x.jpg 1x, ./images/team/olha_mobile_450@2x.jpg 2x"
+                                            media="(min-width: 480px)">
+                                        <img src="./images/team/olha.jpg" alt="Ольга Репина" width="100%">
+                                    </picture>
+                        <!-- <img src="./images/img5.jpg" alt="Девушка, блондинка в очках" width="270"> -->
                         <div class="team-block">
                             <h3 class="team-block__name">Ольга Репина</h3>
                             <p class="team-block__text" lang="en">Frontend Developer</p>
@@ -281,7 +299,16 @@
                         </div>
                     </li>
                     <li class="team-list__item">
-                        <img src="./images/img6.jpg" alt="Мужчина с рыжей бородой" width="270">
+                                    <picture>
+                                        <source srcset="./images/team/nikolay_desktop_270@1x.jpg 1x, ./images/team/nikolay_desktop_270@2x.jpg 2x"
+                                            media="(min-width: 1200px)">
+                                        <source srcset="./images/team/nikolay_tablet_354@1x.jpg 1x, ./images/team/nikolay_tablet_354@2x.jpg 2x"
+                                            media="(min-width: 768px)">
+                                        <source srcset="./images/team/nikolay_mobile_450@1x.jpg 1x, ./images/team/nikolay_mobile_450@2x.jpg 2x"
+                                            media="(min-width: 480px)">
+                                        <img src="./images/team/nikolay.jpg" alt="Николай Тарасов" width="100%">
+                                    </picture>
+                        <!-- <img src="./images/img6.jpg" alt="Мужчина с рыжей бородой" width="270"> -->
                         <div class="team-block">
                             <h3 class="team-block__name">Николай Тарасов</h3>
                             <p class="team-block__text" lang="en">Marketing</p>
@@ -318,7 +345,16 @@
                         </div>
                     </li>
                     <li class="team-list__item">
-                        <img src="./images/img7.jpg" alt="Мужчина, брюнет в очках" width="270">
+                                    <picture>
+                                        <source srcset="./images/team/michael_desktop_270@1x.jpg 1x, ./images/team/michael_desktop_270@2x.jpg 2x"
+                                            media="(min-width: 1200px)">
+                                        <source srcset="./images/team/michael_tablet_354@1x.jpg 1x, ./images/team/michael_tablet_354@2x.jpg 2x"
+                                            media="(min-width: 768px)">
+                                        <source srcset="./images/team/michael_mobile_450@1x.jpg 1x, ./images/team/michael_mobile_450@2x.jpg 2x"
+                                            media="(min-width: 480px)">
+                                        <img src="./images/team/michael.jpg" alt="Михаил Ермаков" width="100%">
+                                    </picture>
+                        <!-- <img src="./images/img7.jpg" alt="Мужчина, брюнет в очках" width="270"> -->
                         <div class="team-block">
                             <h3 class="team-block__name">Михаил Ермаков</h3>
                             <p class="team-block__text" lang="en">UI Designer</p>
