@@ -152,15 +152,16 @@
   margin-bottom: 30px;
   position: relative;
   cursor: pointer;
+  display: inline-block;
   span {
     width: 16px;
     height: 15px;
     border: 2px solid var(--primary-title-color);
     border-radius: 3px;
     margin-right: 8px;
-    display: flex;
     align-items: center;
     justify-content: center;
+    vertical-align: middle;
     box-shadow: 0px 4px 4px 0px #00000040;
     transition: border-color var(--timing-function),
       background-color var(--timing-function), box-shadow var(--timing-function);
@@ -185,4 +186,12 @@
 .police-link {
   margin-left: 2px;
   color: var(--accent-color);
+}
+
+.modal-checkbox__icon {
+  display: inline-block;
+  vertical-align: middle;
+  width: 16px;
+  height: 15px;
+  transition: var(--timing-function);
 }
