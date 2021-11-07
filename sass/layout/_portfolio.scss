@@ -25,10 +25,15 @@
 }
 
 .portfolio-list__link {
+  height: 100%;
   display: block;
   transition: box-shadow var(--timing-function);
   @media screen and (max-width: 767px) {
     margin-bottom: 30px;
+  }
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    border: 1px solid #eeeeee;
+    border-top: none;
   }
   &:hover,
   &:focus {
@@ -65,11 +70,17 @@
 
 .card-block {
   padding: 20px 24px;
-  border: 1px solid #eeeeee;
+
   border-top: none;
   display: flex;
   flex-direction: column;
   flex-grow: 1;
+  @media screen and (max-width: 767px) {
+    border: 1px solid #eeeeee;
+  }
+  @media screen and (min-width: 1200px) {
+    border: 1px solid #eeeeee;
+  }
 }
 
 .card-block__title {

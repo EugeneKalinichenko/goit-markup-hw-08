@@ -355,8 +355,8 @@ body {
 .modal-checkbox__icon {
   display: inline-block;
   vertical-align: middle;
-  width: 16px;
-  height: 15px;
+  width: 11px;
+  height: 8px;
   transition: var(--timing-function);
 }
 
@@ -441,6 +441,16 @@ body {
   }
 }
 
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .header-contact__link {
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    color: var(--secondary-text-color);
+  }
+}
+
 @media screen and (min-width: 1200px) {
   .header-contact__link {
     padding-top: 32px;
@@ -476,13 +486,15 @@ body {
   }
 }
 
-.header-contact__item:not(:last-child) {
-  margin-right: 30px;
-}
-
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .header-contact__item:not(:last-child) {
     margin-bottom: 10px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .header-contact__item:not(:last-child) {
+    margin-right: 30px;
   }
 }
 
@@ -929,7 +941,7 @@ body {
     display: flex;
     align-items: baseline;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: space-between;
   }
 }
 
@@ -1242,6 +1254,7 @@ body {
 }
 
 .portfolio-list__link {
+  height: 100%;
   display: block;
   transition: box-shadow var(--timing-function);
 }
@@ -1249,6 +1262,13 @@ body {
 @media screen and (max-width: 767px) {
   .portfolio-list__link {
     margin-bottom: 30px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .portfolio-list__link {
+    border: 1px solid #eeeeee;
+    border-top: none;
   }
 }
 
@@ -1285,11 +1305,22 @@ body {
 
 .card-block {
   padding: 20px 24px;
-  border: 1px solid #eeeeee;
   border-top: none;
   display: flex;
   flex-direction: column;
   flex-grow: 1;
+}
+
+@media screen and (max-width: 767px) {
+  .card-block {
+    border: 1px solid #eeeeee;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .card-block {
+    border: 1px solid #eeeeee;
+  }
 }
 
 .card-block__title {
@@ -1389,7 +1420,7 @@ body {
 .mobile-nav.is-hidden {
   pointer-events: none;
   transform: translateX(100%);
-  transition: transform 1250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform 1250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 1250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .is-hidden {
